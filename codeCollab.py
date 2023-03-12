@@ -1,6 +1,14 @@
 
 class Tetris:
 
+    """Assumptions:
+        - <a> (+<return>): move piece left and move one row down
+        - <d> (+<return>): move piece right and move one row down
+        - <w> (+<return>): rotate piece counter clockwise and move one row down
+        - <s> (+<return>): rotate piece clockwise and move one row down
+        - <space>: no action and the piece moves one row down
+        """
+
     def __init__(self):
         pass
 
