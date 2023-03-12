@@ -6,7 +6,6 @@ class Tetris:
 
     def move(self):
         while True:
-            try:
                 choice = input("Where you what to move :")
                 Input = choice.lower()
                 if Input=="a":
@@ -20,9 +19,9 @@ class Tetris:
                 elif Input == " ":
                     return self.do_nothing()
                 
-            except ValueError:
-                print("Invalid Move Please Enter make a valid Move")
-                continue
+                if Input not in ["a", "d", "w", "s", " "]:
+                    print("Invalid Move Please Enter make a valid Move")
+                    continue
 
     def left(self):
             return "move piece left and move one row down"
